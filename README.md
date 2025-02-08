@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# Aluguel de Games
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o site de **Aluguel de Games**, uma plataforma que oferece soluções completas em locação de games, fliperamas, videokê, simuladores e outros equipamentos para festas e eventos. O site foi desenvolvido para proporcionar uma experiência visual dinâmica e intuitiva, facilitando o acesso dos clientes às informações e serviços disponíveis.
 
-Currently, two official plugins are available:
+## Recursos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Design Responsivo:** Layout adaptável para desktops, tablets e smartphones.
+- **Animações Suaves:** Transições e efeitos dinâmicos implementados com GSAP.
+- **Interface Intuitiva:** Navegação facilitada para explorar os serviços e o portfólio.
+- **Portfólio:** Exposição dos equipamentos e serviços disponíveis.
+- **Formulário de Contato:** Facilita o contato e a solicitação de serviços.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=flat)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white&style=flat)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat)
+![GSAP](https://img.shields.io/badge/-GSAP-88CE02?logo=greensock&logoColor=black&style=flat)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
+![Phosphor Icons](https://img.shields.io/badge/-Phosphor%20Icons-4E4E4E?logo=phosphor-icons&logoColor=white&style=flat)
 
-- Configure the top-level `parserOptions` property like this:
+## Estrutura do Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **src/**: Componentes React, estilos, scripts e assets do projeto.
+- **package.json**: Lista as dependências e scripts para gerenciamento do projeto.
